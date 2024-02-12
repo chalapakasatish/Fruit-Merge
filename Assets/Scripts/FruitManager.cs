@@ -3,20 +3,35 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class FruitManager : MonoBehaviour
 {
     [Header("Elements")]
-    [SerializeField] private GameObject fruitPrefab;
+    [SerializeField] private Fruit[] spawnableFruits;
+    [SerializeField] private Fruit[] fruitPrefabs;
+    [SerializeField] private Transform fruitsParent;
     [SerializeField] private LineRenderer fruitSpawnLine;
-    private GameObject currentFruit;
+    private Fruit currentFruit;
 
     [Header("Settings")]
     [SerializeField] private float fruitYSpawnPos;
     public bool enableGizmos;
+    private bool canControl;
+    private bool isControlling;
+    [SerializeField]private float spawnDelay;
 
+    [Header("Next Fruit Settings")]
+    private int nextFruitIndex;
+
+    private void Awake()
+    {
+        MergeManager.onMergeProcessed += MergeProcessedCallback;
+    }
     private void Start()
     {
+        SetNextFruitIndex();
+        canControl = true;
         HideLine();
     }
     private void Update()
@@ -31,26 +46,39 @@ public class FruitManager : MonoBehaviour
         }
         else if(Input.GetMouseButton(0))
         {
-            MouseDragCallback();
+            if (isControlling)
+                MouseDragCallback();
+            else
+                MouseDownCallback();
         }
-        else if(Input.GetMouseButtonUp(0)) 
+        else if(Input.GetMouseButtonUp(0) && isControlling) 
         {
             MouseupCallback();
         }
-
-        
     }
 
     private void MouseupCallback()
     {
         HideLine();
-        currentFruit.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        if(currentFruit != null)
+        currentFruit.EnablePhysics();
+        canControl = false;
+        StartControlTimer();
+        isControlling = false;
     }
 
+    private void StartControlTimer()
+    {
+        Invoke("StopControlTimer", spawnDelay);
+    }
+    private void StopControlTimer()
+    {
+        canControl = true;
+    }
     private void MouseDragCallback()
     {
         PlaceLineAtClickedPosition();
-        currentFruit.transform.position = GetSpawnPosition();
+        currentFruit.MoveTo(GetSpawnPosition());
     }
     private Vector2 GetSpawnPosition()
     {
@@ -63,13 +91,23 @@ public class FruitManager : MonoBehaviour
         DisplayLine();
         PlaceLineAtClickedPosition();
         SpawnFruit();
+        isControlling = true;
     }
     private void SpawnFruit()
     {
         Vector2 spawnPosition = GetSpawnPosition();
-        currentFruit = Instantiate(fruitPrefab, spawnPosition, Quaternion.identity);
+        Fruit fruitToInstantiate = spawnableFruits[nextFruitIndex];
+        currentFruit = Instantiate(fruitToInstantiate,spawnPosition, Quaternion.identity, fruitsParent);
+        SetNextFruitIndex();
     }
-
+    private void SetNextFruitIndex()
+    {
+        nextFruitIndex = Random.Range(0, spawnableFruits.Length);
+    }
+    public string GetNextFruitName()
+    {
+        return spawnableFruits[nextFruitIndex].name;
+    }
     private Vector2 GetClickedWorldPosition()
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -86,6 +124,24 @@ public class FruitManager : MonoBehaviour
     {
         fruitSpawnLine.SetPosition(0, GetSpawnPosition());
         fruitSpawnLine.SetPosition(1, GetSpawnPosition() + Vector2.down * 15);
+    }
+    private void MergeProcessedCallback(FruitType fruitType,Vector2 spawnPosition)
+    {
+        for (int i = 0; i < fruitPrefabs.Length; i++)
+        {
+            if (fruitPrefabs[i].GetFruitType() == fruitType)
+            {
+                SpawnMergedFruit(fruitPrefabs[i],spawnPosition);
+                break;
+            }
+        }
+    }
+
+    private void SpawnMergedFruit(Fruit fruit, Vector2 spawnPosition)
+    {
+        Fruit fruitInstance = Instantiate(fruit, spawnPosition, Quaternion.identity,fruitsParent);
+        fruitInstance.EnablePhysics();
+
     }
 #if UNITY_EDITOR
     private void OnDrawGizmos()
