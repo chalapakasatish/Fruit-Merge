@@ -791,19 +791,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnableFruits:
-  - {fileID: 6214499334219087237, guid: 1c2e9fbfe4353eb47ba46d9e4270e376, type: 3}
-  - {fileID: 6214499334219087237, guid: f271d75f0024642479ebd1f4bd76fe08, type: 3}
-  - {fileID: 6214499334219087237, guid: da4d8529204fb634d860254eaa1081cc, type: 3}
+  - {fileID: 6214499334219087237, guid: 475db9efd6ed5304a85c61664bcb0092, type: 3}
+  - {fileID: 6214499334219087237, guid: f4c929dce360cfd459eb9087b8e5ff14, type: 3}
+  - {fileID: 6214499334219087237, guid: a79ab9b6e76ea6a4c810ed59bc68649a, type: 3}
   fruitPrefabs:
-  - {fileID: 6214499334219087237, guid: 1c2e9fbfe4353eb47ba46d9e4270e376, type: 3}
-  - {fileID: 6214499334219087237, guid: f271d75f0024642479ebd1f4bd76fe08, type: 3}
-  - {fileID: 6214499334219087237, guid: da4d8529204fb634d860254eaa1081cc, type: 3}
-  - {fileID: 6214499334219087237, guid: a77be9672c0b67d47849635185247471, type: 3}
-  - {fileID: 6214499334219087237, guid: b7a489897734c9f4f838b7907a92f858, type: 3}
-  - {fileID: 6214499334219087237, guid: b1fb0278288120542abdd80f419119b7, type: 3}
-  - {fileID: 6214499334219087237, guid: d7f7456ba6e68de4d84a9ceca23c3531, type: 3}
-  - {fileID: 6214499334219087237, guid: ffb027293032ea1428c5ac9c30c0e7e1, type: 3}
-  - {fileID: 6214499334219087237, guid: e5fe4f8fec90e5848acb6a169bc36ece, type: 3}
+  - {fileID: 6214499334219087237, guid: 475db9efd6ed5304a85c61664bcb0092, type: 3}
+  - {fileID: 6214499334219087237, guid: f4c929dce360cfd459eb9087b8e5ff14, type: 3}
+  - {fileID: 6214499334219087237, guid: a79ab9b6e76ea6a4c810ed59bc68649a, type: 3}
+  - {fileID: 6214499334219087237, guid: f46e503d972a1ae4c98e7b26cc2504c2, type: 3}
+  - {fileID: 6214499334219087237, guid: 413500910474b844b85b291e8e4ab80b, type: 3}
+  - {fileID: 6214499334219087237, guid: e0a56d4449f93a84b91719ab378e525f, type: 3}
+  - {fileID: 6214499334219087237, guid: cb03612fad028f142b6693b2420bcc91, type: 3}
+  - {fileID: 6214499334219087237, guid: e8fe6119e83dda84ab85a11aa96bd90e, type: 3}
   fruitsParent: {fileID: 260188439}
   fruitSpawnLine: {fileID: 994019037}
   fruitYSpawnPos: 3.5

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6214499334219087237}
   - component: {fileID: 9067993007086947013}
   m_Layer: 0
-  m_Name: 05_Orange
+  m_Name: 05_Uranus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,7 +179,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f4ec0fb11e2ac764fb946d61a227c735, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b50222d15650a84c963be3892b3f5b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
