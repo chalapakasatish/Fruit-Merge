@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
-
+using System;
 public class FruitManager : MonoBehaviour
 {
     [Header("Elements")]
@@ -23,6 +23,8 @@ public class FruitManager : MonoBehaviour
 
     [Header("Next Fruit Settings")]
     private int nextFruitIndex;
+    [Header("Actions")]
+    public static Action onNextFruitIndexSet;
 
     private void Awake()
     {
@@ -103,10 +105,15 @@ public class FruitManager : MonoBehaviour
     private void SetNextFruitIndex()
     {
         nextFruitIndex = Random.Range(0, spawnableFruits.Length);
+        onNextFruitIndexSet?.Invoke();
     }
     public string GetNextFruitName()
     {
         return spawnableFruits[nextFruitIndex].name;
+    }
+    public Sprite GetNextFruitSprite()
+    {
+        return spawnableFruits[nextFruitIndex].GetSprite();
     }
     private Vector2 GetClickedWorldPosition()
     {
@@ -151,5 +158,7 @@ public class FruitManager : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(new Vector3(-5, fruitYSpawnPos, 0), new Vector3(5, fruitYSpawnPos, 0));
     }
+
+    
 #endif
 }

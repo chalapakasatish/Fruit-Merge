@@ -85,6 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeccb774053947458aa64bd6dccc1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 2822589326738578153}
   fruitType: 7
 --- !u!95 &9067993007086947013
 Animator:

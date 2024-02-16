@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2822589326552425911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2822589326738578158}
@@ -85,6 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeccb774053947458aa64bd6dccc1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 2822589326738578153}
   fruitType: 1
 --- !u!95 &9067993007086947013
 Animator:

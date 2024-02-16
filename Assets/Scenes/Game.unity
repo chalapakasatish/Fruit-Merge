@@ -401,6 +401,7 @@ Transform:
   - {fileID: 1305653264}
   - {fileID: 2017617566}
   - {fileID: 519420032}
+  - {fileID: 592085095}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -449,6 +450,137 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lastSender: {fileID: 0}
+--- !u!1 &592085094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 592085095}
+  - component: {fileID: 592085096}
+  m_Layer: 0
+  m_Name: Fruit DeadLine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &592085095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592085094}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5, y: 3.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 540153856}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!120 &592085096
+LineRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592085094}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -1
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 10, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 0.04
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 1, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_UseWorldSpace: 0
+  m_Loop: 0
 --- !u!1 &678710572
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +613,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1695840611}
+  - {fileID: 1825255431}
   m_Father: {fileID: 152981132}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -622,7 +755,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: -5, z: 1}
@@ -791,18 +924,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnableFruits:
-  - {fileID: 6214499334219087237, guid: 475db9efd6ed5304a85c61664bcb0092, type: 3}
-  - {fileID: 6214499334219087237, guid: f4c929dce360cfd459eb9087b8e5ff14, type: 3}
-  - {fileID: 6214499334219087237, guid: a79ab9b6e76ea6a4c810ed59bc68649a, type: 3}
+  - {fileID: 6214499334219087237, guid: 1c2e9fbfe4353eb47ba46d9e4270e376, type: 3}
+  - {fileID: 6214499334219087237, guid: f271d75f0024642479ebd1f4bd76fe08, type: 3}
+  - {fileID: 6214499334219087237, guid: da4d8529204fb634d860254eaa1081cc, type: 3}
   fruitPrefabs:
-  - {fileID: 6214499334219087237, guid: 475db9efd6ed5304a85c61664bcb0092, type: 3}
-  - {fileID: 6214499334219087237, guid: f4c929dce360cfd459eb9087b8e5ff14, type: 3}
-  - {fileID: 6214499334219087237, guid: a79ab9b6e76ea6a4c810ed59bc68649a, type: 3}
-  - {fileID: 6214499334219087237, guid: f46e503d972a1ae4c98e7b26cc2504c2, type: 3}
-  - {fileID: 6214499334219087237, guid: 413500910474b844b85b291e8e4ab80b, type: 3}
-  - {fileID: 6214499334219087237, guid: e0a56d4449f93a84b91719ab378e525f, type: 3}
-  - {fileID: 6214499334219087237, guid: cb03612fad028f142b6693b2420bcc91, type: 3}
-  - {fileID: 6214499334219087237, guid: e8fe6119e83dda84ab85a11aa96bd90e, type: 3}
+  - {fileID: 6214499334219087237, guid: 1c2e9fbfe4353eb47ba46d9e4270e376, type: 3}
+  - {fileID: 6214499334219087237, guid: f271d75f0024642479ebd1f4bd76fe08, type: 3}
+  - {fileID: 6214499334219087237, guid: da4d8529204fb634d860254eaa1081cc, type: 3}
+  - {fileID: 6214499334219087237, guid: a77be9672c0b67d47849635185247471, type: 3}
+  - {fileID: 6214499334219087237, guid: b7a489897734c9f4f838b7907a92f858, type: 3}
+  - {fileID: 6214499334219087237, guid: b1fb0278288120542abdd80f419119b7, type: 3}
+  - {fileID: 6214499334219087237, guid: d7f7456ba6e68de4d84a9ceca23c3531, type: 3}
+  - {fileID: 6214499334219087237, guid: ffb027293032ea1428c5ac9c30c0e7e1, type: 3}
+  - {fileID: 6214499334219087237, guid: e5fe4f8fec90e5848acb6a169bc36ece, type: 3}
   fruitsParent: {fileID: 260188439}
   fruitSpawnLine: {fileID: 994019037}
   fruitYSpawnPos: 3.5
@@ -821,6 +955,83 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextFruitText: {fileID: 1695840612}
+  nextFruitImage: {fileID: 1441402764}
+--- !u!1 &1441402762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441402763}
+  - component: {fileID: 1441402765}
+  - component: {fileID: 1441402764}
+  m_Layer: 0
+  m_Name: Next Fruit Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1441402763
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441402762}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1825255431}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -40, y: -40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1441402764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441402762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d60ded927a341544ca9e3969079acd2a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1441402765
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441402762}
+  m_CullTransparentMesh: 1
 --- !u!1 &1695840610
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,7 +1049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1695840611
 RectTransform:
   m_ObjectHideFlags: 0
@@ -989,6 +1200,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1825255430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1825255431}
+  - component: {fileID: 1825255433}
+  - component: {fileID: 1825255432}
+  m_Layer: 0
+  m_Name: Next Fruit Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1825255431
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825255430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1441402763}
+  m_Father: {fileID: 678710573}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -100, y: -100}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &1825255432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825255430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d8dd14a2f40e6484da5fab46b54f94f3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1825255433
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825255430}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2017617565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1006,7 +1294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6170256388294215298, guid: 4440aee0e070bc440823288829a39723, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 3.17
       objectReference: {fileID: 0}
     - target: {fileID: 6170256388294215298, guid: 4440aee0e070bc440823288829a39723, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1014,7 +1302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6170256388294215298, guid: 4440aee0e070bc440823288829a39723, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5
+      value: -4.58
       objectReference: {fileID: 0}
     - target: {fileID: 6170256388294215298, guid: 4440aee0e070bc440823288829a39723, type: 3}
       propertyPath: m_LocalPosition.z
