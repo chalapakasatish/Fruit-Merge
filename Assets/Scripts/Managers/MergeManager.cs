@@ -14,7 +14,10 @@ public class MergeManager : MonoBehaviour
     {
         Fruit.onCollisionWithFruit += CollosionBetweenFruitsCallback;
     }
-
+    private void OnDestroy()
+    {
+        Fruit.onCollisionWithFruit -= CollosionBetweenFruitsCallback;
+    }
     private void CollosionBetweenFruitsCallback(Fruit sender,Fruit otherFruit)
     {
         if(lastSender != null)

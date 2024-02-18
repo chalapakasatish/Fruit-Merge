@@ -13,7 +13,10 @@ public class FruiManagerUI : MonoBehaviour
     {
         FruitManager.onNextFruitIndexSet += UpdateNextFruitImage;
     }
-
+    private void OnDestroy()
+    {
+        FruitManager.onNextFruitIndexSet -= UpdateNextFruitImage;
+    }
     private void UpdateNextFruitImage()
     {
         if(fruitManager == null)

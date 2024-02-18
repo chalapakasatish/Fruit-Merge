@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,7 +14,10 @@ public class UIManager : MonoBehaviour
     {
         GameManager.onGameStateChanged += GameStateChangedCallback;
     }
-
+    private void OnDestroy()
+    {
+        GameManager.onGameStateChanged -= GameStateChangedCallback;
+    }
     private void GameStateChangedCallback(GameState gameState)
     {
         switch (gameState)
@@ -56,5 +60,9 @@ public class UIManager : MonoBehaviour
     {
         GameManager.instance.SetGameState();
         SetGame();
+    }
+    public void NextButtonCallback()
+    {
+        SceneManager.LoadScene(0);
     }
 }

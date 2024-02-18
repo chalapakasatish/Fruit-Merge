@@ -29,6 +29,10 @@ public class FruitManager : MonoBehaviour
     {
         MergeManager.onMergeProcessed += MergeProcessedCallback;
     }
+    private void OnDestroy()
+    {
+        MergeManager.onMergeProcessed -= MergeProcessedCallback;
+    }
     private void Start()
     {
         SetNextFruitIndex();
