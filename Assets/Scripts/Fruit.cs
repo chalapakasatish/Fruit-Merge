@@ -14,6 +14,8 @@ public class Fruit : MonoBehaviour
     public static Action<Fruit,Fruit> onCollisionWithFruit;
     private bool hasCollided;
     private bool canBeMerged;
+    [Header("Effects")]
+    [SerializeField]private ParticleSystem mergeParticles;
     private void Start()
     {
         Invoke("AllowMerge", 0.25f);
@@ -65,6 +67,15 @@ public class Fruit : MonoBehaviour
                 return;
             onCollisionWithFruit?.Invoke(this, otherFruit);
         }
+    }
+    public void Merge()
+    {
+        if (mergeParticles != null)
+        {
+            mergeParticles.transform.SetParent(null);
+            mergeParticles.Play();
+        }
+        Destroy(gameObject);
     }
     public bool HasCollided()
     {
