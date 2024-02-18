@@ -14,3 +14,9 @@ public enum FruitType
     Coconut,
     Watermelon
 }
+public enum GameState
+{
+    Menu,
+    Game,
+    Gameover
+}

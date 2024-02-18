@@ -7,17 +7,11 @@ using TMPro;
 public class FruiManagerUI : MonoBehaviour
 {
     [Header("Elements")]
-    [SerializeField] private TextMeshProUGUI nextFruitText;
     [SerializeField] private Image nextFruitImage;
     private FruitManager fruitManager;
     private void Awake()
     {
         FruitManager.onNextFruitIndexSet += UpdateNextFruitImage;
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        //fruitManager = GetComponent<FruitManager>();
     }
 
     private void UpdateNextFruitImage()
