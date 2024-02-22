@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4881914717473748227
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 279638687, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 279638687, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.654902
+      objectReference: {fileID: 0}
+    - target: {fileID: 279638687, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425910, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326552425911, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_Name
+      value: Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822589326738578153, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f4ec0fb11e2ac764fb946d61a227c735, type: 3}
+    - target: {fileID: 6214499334219087237, guid: d582f82fc08304044a87f92a18eed279, type: 3}
+      propertyPath: fruitType
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d582f82fc08304044a87f92a18eed279, type: 3}
